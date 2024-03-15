@@ -48,7 +48,7 @@ class Triangle:
     @staticmethod
     def scaleVertex(vertex, scale):
         return (scale[0] * vertex[0],
-                scale[0] * vertex[1])
+                scale[1] * vertex[1])
 
     def calc_abs_pos(self):
         scaledVertex1 = Triangle.scaleVertex(self._vertex1, self.scale)
